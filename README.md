@@ -1,12 +1,38 @@
-# React + Vite
+# Hetul React Portfolio – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive portfolio website built with **React (Vite)** that dynamically fetches **Projects** and **Skills** from a backend API while also displaying static content as fallback.  
+Designed for modern, fast, and mobile-friendly performance.
 
-Currently, two official plugins are available:
+##  Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend**: [https://hetul-portfolio-react.vercel.app](https://hetul-portfolio-react.vercel.app)  
+- **Backend API**: [https://admin-portfolio-5ws2.onrender.com](https://admin-portfolio-5ws2.onrender.com)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Features
+
+- **Dynamic Data Fetch**: Retrieves projects and skills from backend API
+- **Static Fallback Data**: Always shows default projects/skills if API is unavailable
+- **Responsive Layout**: Mobile-first design
+- **Custom Styling**: Clean, modern CSS (no heavy UI libraries)
+- **Section Navigation**: Home, About, Projects, Skills, Contact
+
+---
+
+## 🛠Tech Stack
+
+- React (Vite)
+- JavaScript (ES6+)
+- CSS3 (Custom styling)
+- Fetch API
+- Vercel (Deployment)
+
+---
+
+## ⚙ Environment Variables
+
+Create a `.env` file in the root of the project:
+
+```env
+VITE_API_BASE=https://admin-portfolio-5ws2.onrender.com
