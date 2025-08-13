@@ -6,7 +6,7 @@ export default function ProjectCard({ title, image, url }) {
       </div>
       <h2 className="project-sub-title">{title}</h2>
       <div className="btn-container">
-        <a href={url} target="_blank" rel="noreferrer" className="common-button">
+        <a href={url || "/"} target="_blank" rel="noreferrer" className="common-button">
           Live Demo
         </a>
       </div>
