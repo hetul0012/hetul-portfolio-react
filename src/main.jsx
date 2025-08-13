@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 
-// Your original CSS files (copied below)
+// existing CSS
 import "../src/styles/styles.css";
 import "../src/styles/mediaquery.css";
 

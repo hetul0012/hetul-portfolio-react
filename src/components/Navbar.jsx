@@ -31,7 +31,7 @@ export default function Navbar() {
                   <li><a href="#skill">Skills</a></li>
                   <li><a href="#service">Services</a></li>
                   <li><a href="#project">Project</a></li>
-                  <li><a href="/case-study.html" target="_blank" rel="noreferrer">Case Study</a></li>
+                
                   <li><a href="#contact">Contact</a></li>
                 </ul>
               </div>
