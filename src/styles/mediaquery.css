@@ -1,0 +1,377 @@
+/* Resposive Media query start */
+
+:root {
+    --main-color: #000000;
+    --white-color: #FFFFFF;
+    --box-color: #1B1B1B;
+}
+
+@media (max-width: 1024px) {
+    .case-study-header {
+      font-size: 2rem;
+      padding: 2.5rem 1rem;
+    }
+  
+    .case-study-hero h2 {
+      font-size: 1.6rem;
+    }
+  
+    .case-study-content {
+      padding: 1.5rem;
+    }
+  
+    .case-study-section h3 {
+      font-size: 1.3rem;
+    }
+  
+    .case-study-section p,
+    .case-study-section li {
+      font-size: 1rem;
+    }
+  }
+
+
+@media only screen and (max-width: 980px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-bar {
+        height: 0px;
+        border-radius: 50px;
+        position: absolute;
+        top: 125px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: var(--main-color);
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 2;
+        transition: 0.5s all ease-in-out;
+        opacity: 0;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+        padding: 30px;
+    }
+
+    .nav-bar.active {
+        opacity: 1;
+        height: 350px;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+    .nav-bar ul li{
+        margin: 20px 0px;
+    }
+    .nav-bar ul li:last-child{
+        margin-bottom: 0;
+    }
+    .nav-bar ul li a {
+        color:var(--white-color);
+        display: inline-block;
+    }
+
+    .nav-bar ul li a.home-active {
+        color:var(--white-color);
+    }
+
+    .nav-bar ul li a.home-active::after {
+        background-color: var(--white-color);
+    }
+
+    .nav-bar ul li a::after {
+        background-color: var(--white-color);
+    }
+
+    .nav-bar ul li a:hover::after {
+        background-color: var(--white-color);
+        color: var(--white-color);
+    }
+
+
+    /* About section */
+    .about_row .expe,
+    .about_row .edu {
+        width: 330px;
+        height: 250px;
+
+    }
+
+    /* Service section */
+    .service-row .custom_col {
+        width: 330px;
+        height: 250px;
+        margin: 10px;
+
+    }
+
+    /* Project container */
+
+    .project-container .custom_col {
+        width: 330px;
+        height: auto;
+        margin: 10px;
+
+    }
+
+    /* Contact container */
+
+    .contact-row .leftside-col .box {
+        width: 330px;
+        height: auto;
+        margin: 10px;
+
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Common Code*/
+    .main-heading {
+        font-size: 36px;
+
+    }
+
+    .second-heading {
+        font-size: 32px;
+    }
+
+    /* Header section */
+    .logo a,
+    i {
+        font-size: 24px;
+
+    }
+
+      /* Home section */
+    .home-row .image-col img {
+        width: 200px;
+    }
+
+    /* Case study section */
+    .case-study-header {
+        font-size: 1.8rem;
+        padding: 2rem 0.8rem;
+      }
+    
+      .case-study-hero {
+        padding: 2rem 1rem;
+      }
+    
+      .case-study-hero h2 {
+        font-size: 1.4rem;
+      }
+    
+      .case-study-content {
+        padding: 1rem;
+      }
+    
+      .case-study-section h3 {
+        font-size: 1.2rem;
+        padding-left: 0.6rem;
+      }
+    
+      .footer {
+        font-size: 0.9rem;
+        padding: 1.5rem;
+      }
+
+    /* Footer section */
+
+    .footer-container .footer-logo a {
+        font-size: 24px;
+    }
+
+    .footer-container i {
+        font-size: 20px;
+
+    }
+
+    .footer-container p,
+    .footer-container span  {
+        font-size: 13px;
+    }
+
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    /* Common Code */
+    .custom_col {
+        padding: 0 30px;
+    }
+
+    .main-heading {
+        font-size: 24px;
+    }
+
+    .second-heading {
+        font-size: 20px;
+    }
+
+    .title-heading {
+        font-size: 12px;
+    }
+
+    .common-heading {
+        font-size: 32px;
+    }
+
+
+
+    /* Home section */
+    #home {
+        height: 80vh;
+    }
+
+
+    /* About section */
+    .about_row .about-title-info {
+        text-align: justify;
+    }
+
+    .about-container .about-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about_row .expe,
+    .about_row .edu {
+        width: 300px;
+        padding: 14px;
+    }
+
+
+    .about_row .about_col .about-sub-heading,
+    .about_row .about_col p {
+        font-size: 16px;
+    }
+
+    .about_row .expe i,
+    .about_row .edu i {
+        font-size: 1.5rem;
+    }
+
+    /* Skill section */
+    #skill {
+        width: 100%;
+
+    }
+
+    .skill-container .skill-row {
+        margin-top: 25px;
+    }
+
+    .skill-title-deatils {
+        text-align: center;
+    }
+
+    .skill-row .custom_box {
+        text-align: center;
+        margin: 15px;
+    }
+
+
+    /* Service section */
+    .service-row .custom_col {
+        width: 300px;
+        height: auto;
+        margin: 10px;
+        padding: 10px;
+
+    }
+
+    .service-row .service-img img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Project section */
+
+    .project-container .detail-container {
+        width: 300px;
+    }
+
+    .project-container .detail-container .info-container img {
+        width: 270px;
+        margin: 10px;
+    }
+
+    /* Contact section */
+    .contact-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    /* Header section start */
+    .logo a,
+    i {
+        font-size: 18px;
+    }
+
+    /* Home section */
+    .home-row .image-col img {
+        width: 155px;
+    }
+
+    /* About section */
+    .about_row .expe,
+    .about_row .edu {
+        width: 230px;
+        height: 270px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+
+
+    /* Project section */
+
+    .project-container .detail-container {
+        width: 250px;
+    }
+
+    .project-container .detail-container .info-container img {
+        width: 230px;
+        margin: 10px;
+    }
+
+    /* Contact section */
+    .contact-container .leftside-container .box {
+        width: 250px;
+    }
+
+    .contact-container .rightside-container form input,
+    .contact-container .rightside-container form .text-area,
+    .contact-container .rightside-container form .contact-button {
+        width: 250px;
+
+    }
+}
