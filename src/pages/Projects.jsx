@@ -2,7 +2,7 @@ import ProjectCard from "../components/ProjectCard";
 import useApiList from "../hooks/useApiList";
 import { normalizeImage } from "../utils/normalizeImage";
 
-// Static assets (import from src/assets)
+// Static assets:
 import codely    from "../assets/codely-clone-mockups.png";
 import furniture from "../assets/funiture-mockups.png";
 import uiClone   from "../assets/ui-mockups.png";
@@ -27,7 +27,7 @@ function dedupeByTitleOrUrl(staticArr, dynamicArr) {
   const uniqueDynamic = dynamicArr.filter(p => {
     const t = (p.title || "").toLowerCase().trim();
     const u = (p.url || "").toLowerCase().trim();
-    const dup = seen.has(t) || (!!u && seen.has(u));
+    const dup = seen.has(t) || (u && seen.has(u));
     if (!dup) {
       if (t) seen.add(t);
       if (u) seen.add(u);
@@ -35,7 +35,7 @@ function dedupeByTitleOrUrl(staticArr, dynamicArr) {
     }
     return false;
   });
-  return [...staticArr, ...uniqueDynamic];
+  return [...staticArr, ...uniqueDynamic]; 
 }
 
 export default function Projects() {

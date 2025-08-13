@@ -10,7 +10,8 @@ export default function useApiList(endpoint) {
     let on = true;
     (async () => {
       try {
-        const res = await fetch(`${API}${endpoint}`, { headers: { Accept: "application/json" } });
+        const url = `${API}${endpoint}`;
+        const res = await fetch(url, { headers: { Accept: "application/json" } });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const json = await res.json();
         if (on) setData(Array.isArray(json) ? json : []);

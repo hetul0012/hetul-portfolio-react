@@ -5,8 +5,8 @@ import figma       from "../assets/figma.png";
 import illustrator from "../assets/illustrator.png";
 import html5       from "../assets/html-5.png";
 import css3        from "../assets/css-3.png";
-import js         from "../assets/js.png";
-import wordpress  from "../assets/wordpress.png";
+import js          from "../assets/js.png";
+import wordpress   from "../assets/wordpress.png";
 
 const STATIC_SKILLS = [
   { id: "static-s1", name: "FIGMA",       level: "60%", icon: figma },
@@ -25,7 +25,7 @@ function dedupeSkills(staticArr, dynamicArr) {
     seen.add(k);
     return true;
   });
-  return [...staticArr, ...uniqueDynamic];
+  return [...staticArr, ...uniqueDynamic]; 
 }
 
 export default function Skills() {
